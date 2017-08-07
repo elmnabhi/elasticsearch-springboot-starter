@@ -1,4 +1,4 @@
-# ElsaticSearch RS2I Starter
+# ElsaticSearch Starter
 
 To run ElasticSearch Starter, we should follow this steps
 
