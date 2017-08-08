@@ -17,10 +17,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class UserServiceTest {
 
     @InjectMocks
-    UserService userService = new UserServiceImpl();
+    private UserService userService = new UserServiceImpl();
 
     @Mock
-    UserRepository userRepository;
+    private UserRepository userRepository;
 
     @Test(expected = EntityNotFoundException.class)
     public void findByUserNameThrowEntityNotFoundExceptionWhenUserIsNotFound() throws EntityNotFoundException {
@@ -30,7 +30,7 @@ public class UserServiceTest {
         Mockito.when(userRepository.findByUserName(userName)).thenReturn(null);
 
         //WHEN
-        User user = userService.findByUserName(userName);
+        userService.findByUserName(userName);
 
         //THEN
         Assert.fail();
