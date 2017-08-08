@@ -5,5 +5,5 @@ import rs2i.starter.elasticsearch.user.domain.User;
 
 public interface UserService {
 
-    public User findByUserName(String userName) throws EntityNotFoundException;
+    User findByUserName(String userName) throws EntityNotFoundException;
 }
