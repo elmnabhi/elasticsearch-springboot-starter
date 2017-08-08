@@ -1,4 +1,4 @@
-# ElsaticSearch Starter
+# ElasticSearch Starter
 
 To run ElasticSearch Starter, we should follow this steps
 
